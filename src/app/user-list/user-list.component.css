@@ -1,0 +1,13 @@
+.list-group, .btn-primary {
+  width: 300px;
+}
+
+.btn-primary {
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+
+.textColor {
+  color: red;
+}
