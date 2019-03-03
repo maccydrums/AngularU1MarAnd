@@ -6,16 +6,18 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
+  //receiving our array from dashboard
   @Input() user: string;
-  @Input() textColor: boolean;
-
-  //state: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  //variable with a boolean property so we can change the text color
+  textColor: boolean = false;
+
+  //function so we can toggle between textColor = true/false
   toggle() {
     this.textColor = !this.textColor;
   }

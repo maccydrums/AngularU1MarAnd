@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  //The array with our users
   users: string[] = ['Knatte', 'Fnatte', 'Tjatte'];
 
   constructor() { }
@@ -14,10 +15,12 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
+  //adding a new user to our array with parameters/data from edit-users (@Output() newName = new EventEmitter<string>();)
   newUser(user){
     this.users.push(user);
   }
 
+  //removes the last user from our array with ---.--- ^
   removeUsername(user) {
     this.users.pop();
   }
